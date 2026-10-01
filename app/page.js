@@ -18,9 +18,9 @@ const homeSchema = {
   "@graph": [
     {
       "@type": "ApartmentComplex",
-      name: "Assetz Naru & Nami",
+      name: "Assetz Naru and Nami",
       description:
-        "Assetz Naru & Nami is a luxury residential gated community located on Whitefield-Hoskote Road (SH-35), Bangalore East, offering 2 BHK, 3 BHK and 4 BHK apartments across 6 high-rise towers on 15 acres.",
+        "Assetz Naru and Nami a new launch premium apartment project in Whitefield-Hoskote Road Bangalore East. Covers 15 acres of land, it offers Luxury apartments over 6 high-rise towers.",
       url: "https://www.assetznarunami.co/",
       image:
         "https://www.assetznarunami.co/images/banners/assetznarunami.webp",
@@ -68,23 +68,23 @@ const homeSchema = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "Where is Assetz Naru & Nami located?",
+          name: "Where is Assetz Naru and Nami located?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Assetz Naru & Nami is located on Whitefield-Hoskote Road (SH-35), Bangalore East.",
+            text: "Assetz Naru and Nami is located on Whitefield-Hoskote Road (SH-35), Bangalore East.",
           },
         },
         {
           "@type": "Question",
-          name: "What is the starting price of Assetz Naru & Nami apartments?",
+          name: "What is the starting price of Assetz Naru and Nami apartments?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The starting price of apartments at Assetz Naru & Nami is approximately ₹1.38 Crore* onwards for a 2 BHK.",
+            text: "The starting price of apartments at Assetz Naru and Nami is approximately ₹1.38 Crore* onwards for a 2 BHK.",
           },
         },
         {
           "@type": "Question",
-          name: "What apartment types are available in Assetz Naru & Nami?",
+          name: "What apartment types are available in Assetz Naru and Nami?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "The project offers 2 BHK, 3 BHK and 4 BHK apartments.",
