@@ -1,38 +1,47 @@
 import BlogSection from "@/components/BlogsSection";
 import AmenitiesPage from "./AmenitiesPage";
 
+const TITLE = "Assetz Naru and Nami Amenities | Clubhouse, Rooftop Pool";
+const DESCRIPTION =
+  "Assetz Naru and Nami amenities: signature clubhouse, rooftop pool, yoga deck, co-working pods, vehicle-free podium, rainwater harvesting and 75% open space.";
+const URL = "https://www.assetznarunami.co/amenities";
+const IMAGE = "https://www.assetznarunami.co/images/amenities.webp";
+
 export const metadata = {
   title: {
-    absolute: "Assetz Naru & Nami Amenities | Clubhouse, Pool & More",
+    absolute: TITLE,
   },
 
-  description:
-    "Assetz Naru & Nami amenities include a signature clubhouse, rooftop pool, wellness and yoga deck, co-working pods, gym, jogging track and 75% open space.",
+  description: DESCRIPTION,
 
   keywords: [
-    "Assetz Naru & Nami amenities",
-    "Assetz Naru & Nami clubhouse",
-    "Assetz Naru & Nami swimming pool",
-    "Assetz Naru & Nami gym",
-    "Assetz Naru & Nami co-working",
-    "Assetz Naru & Nami kids play area",
-    "apartment amenities Whitefield-Hoskote Road"
+    "Assetz Naru and Nami amenities",
+    "Assetz Naru and Nami clubhouse",
+    "Assetz Naru and Nami rooftop swimming pool",
+    "Assetz Naru and Nami yoga deck",
+    "Assetz Naru and Nami co-working pods",
+    "Assetz Naru and Nami vehicle-free podium",
+    "Assetz Naru and Nami open space",
+    "Assetz Naru and Nami sustainability features",
+    "Assetz Naru and Nami parking",
+    "apartment amenities Whitefield-Hoskote Road",
   ],
 
   alternates: {
-    canonical: "https://www.assetznarunami.co/amenities",
+    canonical: URL,
   },
 
   openGraph: {
-    title: "Assetz Naru & Nami Amenities & Lifestyle Facilities",
-    description:
-      "Assetz Naru & Nami amenities include a signature clubhouse, rooftop pool, wellness and yoga deck, co-working pods, gym, jogging track and 75% open space.",
-    url: "https://www.assetznarunami.co/amenities",
-    siteName: "Assetz Naru & Nami",
+    title: TITLE,
+    description: DESCRIPTION,
+    url: URL,
+    siteName: "Assetz Naru and Nami",
     images: [
       {
-        url: "https://www.assetznarunami.co/images/banners/assetznarunami.webp",
-        alt: "Assetz Naru & Nami Amenities",
+        url: IMAGE,
+        width: 1272,
+        height: 709,
+        alt: "Assetz Naru and Nami amenities including clubhouse, rooftop pool and landscaped podium",
       },
     ],
     locale: "en_IN",
@@ -41,14 +50,15 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Assetz Naru & Nami Amenities & Lifestyle Facilities",
-    description:
-      "Assetz Naru & Nami amenities include a signature clubhouse, rooftop pool, wellness and yoga deck, co-working pods, gym, jogging track and 75% open space.",
-    images: ["https://www.assetznarunami.co/images/banners/assetznarunami.webp"],
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [IMAGE],
   },
 
   category: "Real Estate",
 };
+
+const amenity = (name) => ({ "@type": "LocationFeatureSpecification", name, value: true });
 
 export default function page() {
   const schema = {
@@ -56,113 +66,96 @@ export default function page() {
     "@graph": [
       {
         "@type": "BreadcrumbList",
-        "itemListElement": [
+        itemListElement: [
           {
             "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.assetznarunami.co/"
+            position: 1,
+            name: "Home",
+            item: "https://www.assetznarunami.co/",
           },
           {
             "@type": "ListItem",
-            "position": 2,
-            "name": "Amenities",
-            "item": "https://www.assetznarunami.co/amenities"
-          }
-        ]
+            position: 2,
+            name: "Amenities",
+            item: URL,
+          },
+        ],
       },
       {
         "@type": "ApartmentComplex",
-        "name": "Assetz Naru & Nami",
-        "description": "Assetz Naru & Nami amenities include a signature clubhouse, rooftop swimming pool, open-air wellness and yoga deck, co-working pods and landscaped open spaces.",
-        "address": {
+        name: "Assetz Naru & Nami",
+        description:
+          "Assetz Naru & Nami amenities include a standalone signature clubhouse, vehicle-free central podium, rooftop swimming pool, open-air wellness and yoga deck, co-working pods and sustainable water management, with 75% open space.",
+        url: URL,
+        image: IMAGE,
+        numberOfAccommodationUnits: "725",
+        address: {
           "@type": "PostalAddress",
-          "streetAddress": "Whitefield-Hoskote Road (SH-35), Bangalore East",
-          "addressLocality": "Bangalore",
-          "addressRegion": "Karnataka",
-          "postalCode": "560115",
-          "addressCountry": "IN"
+          streetAddress: "Whitefield-Hoskote Road (SH-35), Bangalore East",
+          addressLocality: "Bangalore",
+          addressRegion: "Karnataka",
+          postalCode: "560115",
+          addressCountry: "IN",
         },
-        "amenityFeature": [
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Clubhouse",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Rooftop Swimming Pool",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Gymnasium",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Yoga Deck",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Co-working Pods",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Jogging Track",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Children Play Area",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Badminton Court",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Indoor Games Room",
-            "value": true
-          }
+        amenityFeature: [
+          amenity("Standalone Signature Clubhouse"),
+          amenity("Vehicle-Free Central Podium"),
+          amenity("Rooftop Swimming Pool"),
+          amenity("Open-Air Wellness and Yoga Deck"),
+          amenity("Co-working Pods"),
+          amenity("Native Tree Lines and Micro-climate Landscaping"),
+          amenity("Rainwater Harvesting"),
+          amenity("Greywater Recycling"),
+          amenity("Basement and Podium Parking"),
+          amenity("Carbon-Healing Homes Programme"),
         ],
-        "url": "https://www.assetznarunami.co/amenities",
-        "image": "https://www.assetznarunami.co/images/banners/assetznarunami.webp"
       },
       {
         "@type": "FAQPage",
-        "mainEntity": [
+        mainEntity: [
           {
             "@type": "Question",
-            "name": "What amenities are available at Assetz Naru & Nami?",
-            "acceptedAnswer": {
+            name: "What are the main amenities at Assetz Naru & Nami?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Planned amenities include a standalone signature clubhouse, rooftop swimming pool, open-air wellness and yoga deck, co-working pods, gym, jogging track, children’s play area and landscaped open spaces."
-            }
+              text: "The listed amenities include a standalone clubhouse, vehicle-free central podium, rooftop swimming pool, wellness and yoga deck, co-working pods, landscaped green areas, and sustainable water management systems.",
+            },
           },
           {
             "@type": "Question",
-            "name": "Does Assetz Naru & Nami have a clubhouse?",
-            "acceptedAnswer": {
+            name: "Does Assetz Naru & Nami have a swimming pool?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Yes. A standalone signature clubhouse is planned for community activities and recreation."
-            }
+              text: "Yes. A rooftop swimming pool is included in the provided amenity list.",
+            },
           },
           {
             "@type": "Question",
-            "name": "What sustainability features does Assetz Naru & Nami have?",
-            "acceptedAnswer": {
+            name: "What sustainability features are planned?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Listed features include rainwater harvesting, greywater recycling and the developer’s Carbon-Healing Homes programme."
-            }
-          }
-        ]
-      }
-    ]
+              text: "The listed features include native tree lines, micro-climate landscaping, rainwater harvesting, greywater recycling, and the Carbon-Healing Homes programme.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What is the open space allocation?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The project has a stated open space allocation of 75% across its approximately 15-acre development.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Does the project provide parking facilities?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Basement and podium parking are included in the project's listed infrastructure provisions.",
+            },
+          },
+        ],
+      },
+    ],
   };
 
   return (

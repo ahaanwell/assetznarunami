@@ -94,9 +94,9 @@ export default function BrochureDownload({
         }`}
       >
         <div className="bg-primary rounded shadow-2xl p-3 w-[220px] flex flex-col gap-3">
-          <h3 className="text-white text-md text-center font-bold">
+          <p className="text-white text-md text-center font-bold">
             Download {frmName}
-          </h3>
+          </p>
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-3">
             <input

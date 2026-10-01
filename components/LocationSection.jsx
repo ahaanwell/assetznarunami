@@ -17,13 +17,13 @@ export default function LocationSection() {
           id="location-heading"
           className="text-xl md:text-2xl font-semibold text-gray-900 text-center mb-2"
         >
-          Location of Assetz Naru & Nami
+          Location of Assetz Naru and Nami
         </h2>
 
         <div className="w-full h-px bg-gray-200 mb-5" />
         <div className="space-y-6 text-gray-800 mb-6">
   <p>
-    <strong>Assetz Naru &amp; Nami</strong> is located in <strong>East Bangalore on Whitefield-Hoskote Road or SH-35</strong>. The project references connect it to the wider <strong>Seegehalli-Kannamangala-Doddabanahalli belt</strong> and to Kannamangala.
+    <strong>Assetz Naru and Nami</strong> is located in <strong>East Bangalore on Whitefield-Hoskote Road or SH-35</strong>. The project references connect it to the wider <strong>Seegehalli-Kannamangala-Doddabanahalli belt</strong> and to Kannamangala.
   </p>
 </div>
         <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm mb-8">

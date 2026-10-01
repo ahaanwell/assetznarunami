@@ -69,15 +69,15 @@ export default function PriceListSection() {
         </div>
         <div className="mt-6 space-y-6">
           <div className="space-y-6 text-gray-800">
-  <h2 className="text-2xl font-bold">Assetz Naru &amp; Nami Price – A Derived Band, Not a Developer Rate Card</h2>
+  <h2 className="text-2xl font-bold">Assetz Naru and Nami Price – A Derived Band, Not a Developer Rate Card</h2>
 
   <h3 className="text-xl font-bold">Understanding the Indicative Price Range</h3>
 
-  <p>The Assetz Naru &amp; Nami pricing discussion should be taken with a pinch of salt as the project has not yet released any official developer cost sheet. Therefore, the numbers currently circulating online should not be considered confirmed launch prices.</p>
+  <p>The Assetz Naru and Nami pricing discussion should be taken with a pinch of salt as the project has not yet released any official developer cost sheet. Therefore, the numbers currently circulating online should not be considered confirmed launch prices.</p>
 
   <p>Available market data indicates an indicative rate band of <strong>₹10,800 to ₹12,600 per sq. feet</strong>. This range is based on similar residential projects on Whitefield Hoskote Road and in the wider East Bangalore market. A central working rate of around <strong>Rs 11,500 per sq ft</strong> gives a good indication to estimate the possible ticket size of the apartments.</p>
 
-  <p>This is not the same as quoting an official Assetz Naru &amp; Nami price. No rate card is published by the project confirming the final base price, floor-rise charges, parking charges, preferential location charges, maintenance deposit, taxes, or any other charges applicable to the project.</p>
+  <p>This is not the same as quoting an official Assetz Naru and Nami price. No rate card is published by the project confirming the final base price, floor-rise charges, parking charges, preferential location charges, maintenance deposit, taxes, or any other charges applicable to the project.</p>
 
   <h3 className="text-xl font-bold">How the Indicative Rate Has Been Worked Out</h3>
 

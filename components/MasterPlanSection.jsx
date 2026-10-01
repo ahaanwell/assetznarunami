@@ -20,7 +20,7 @@ export default function MasterPlanSection() {
 
         <div className="w-full h-px bg-gray-200 mb-5" />
         <div className="space-y-6 text-gray-800 mb-6">
-  <p>The <IntLink href="/master-plan"><strong>Assetz Naru &amp; Nami Master Plan</strong></IntLink> gives prospective buyers an overall view of how the residential development is arranged within its approximately <strong>15-acre site</strong> on <strong>Whitefield–Hoskote Road (SH-35), East Bangalore</strong>.</p>
+  <p>The <IntLink href="/master-plan"><strong>Assetz Naru and Nami Master Plan</strong></IntLink> gives prospective buyers an overall view of how the residential development is arranged within its approximately <strong>15-acre site</strong> on <strong>Whitefield–Hoskote Road (SH-35), East Bangalore</strong>.</p>
 
   <p>Unlike an <IntLink href="/floor-plan">apartment floor plan</IntLink>, which explains the internal layout of an individual home, the master plan focuses on the complete project. It helps customers understand the positioning of residential towers, open spaces, and the overall development arrangement.</p>
 </div>

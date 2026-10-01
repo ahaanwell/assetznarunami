@@ -27,12 +27,12 @@ export default function HeroSection() {
 
           <div className="inline-block lg:bg-black/20 px-6 py-3 rounded-md mb-5">
             <h1 className="text-3xl lg:text-2xl xl:text-3xl font-extrabold tracking-wide">
-              Assetz Naru & Nami
+              Assetz Naru and Nami
             </h1>
           </div>
 
           <p className="text-gray-800 text-xl mb-2 font-semiblod lg:hidden">
-            By Assetz
+            By Assetz Group
           </p>
 
           <div className="flex items-center justify-center lg:justify-start gap-2 text-lg mb-6">

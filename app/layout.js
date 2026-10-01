@@ -21,19 +21,20 @@ const robotoMono = Roboto_Mono({
 export const metadata = {
   title: {
     default:
-      "Assetz Naru & Nami | Whitefield-Hoskote Road Bangalore | Review | Brochure  | New Launch",
-    template: "%s | Assetz Naru & Nami Bangalore",
+      "Assetz Naru and Nami | Whitefield-Hoskote Road Bangalore | Review | Brochure  | New Launch",
+    template: "%s | Assetz Naru and Nami Bangalore",
   },
 
   description:
-    "Assetz Naru & Nami a new launch premium apartment project in Whitefield-Hoskote Road (SH-35), Bangalore East. Covers 15 acres of land, it offers 2 BHK, 3 BHK and 4 BHK apartments over 6 high-rise towers.",
+    "Assetz Naru and Nami a new launch premium apartment project in Whitefield-Hoskote Road, Bangalore East. Covers 15 acres of land, it offers 2 BHK, 3 BHK and 4 BHK apartments over 6 high-rise towers.",
 
   keywords: [
+    "Assetz Naru and Nami",
     "Assetz Naru & Nami",
-    "Assetz Naru & Nami Bangalore",
-    "Assetz Naru & Nami Whitefield-Hoskote Road",
-    "Assetz Naru & Nami SH-35",
-    "Assetz Naru & Nami price",
+    "Assetz Naru and Nami Bangalore",
+    "Assetz Naru and Nami Whitefield-Hoskote Road",
+    "Assetz Naru and Nami SH-35",
+    "Assetz Naru and Nami price",
     "Assetz Naru & Nami brochure",
     "Assetz Naru & Nami floor plan",
     "Assetz Naru & Nami review",
@@ -53,17 +54,17 @@ export const metadata = {
 
   openGraph: {
     title:
-      "Assetz Naru & Nami | Whitefield-Hoskote Road Bangalore | Review | Brochure  | New Launch",
+      "Assetz Naru and Nami | Whitefield-Hoskote Road Bangalore | Review | Brochure  | New Launch",
     description:
-      "Assetz Naru & Nami a new launch premium apartment project in Whitefield-Hoskote Road (SH-35), Bangalore East. Covers 15 acres of land, it offers 2 BHK, 3 BHK and 4 BHK apartments over 6 high-rise towers.",
+      "Assetz Naru and Nami a new launch premium apartment project in Whitefield-Hoskote Road, Bangalore East. Covers 15 acres of land, it offers 2 BHK, 3 BHK and 4 BHK apartments over 6 high-rise towers.",
     url: "https://www.assetznarunami.co/",
-    siteName: "Assetz Naru & Nami",
+    siteName: "Assetz Naru and Nami",
     images: [
       {
         url: "https://www.assetznarunami.co/images/banners/assetznarunami.webp",
         width: 1200,
         height: 630,
-        alt: "Assetz Naru & Nami Apartments on Whitefield-Hoskote Road, Bangalore East",
+        alt: "Assetz Naru and Nami Apartments on Whitefield-Hoskote Road, Bangalore East",
       },
     ],
     locale: "en_IN",
@@ -73,9 +74,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Assetz Naru & Nami | Whitefield-Hoskote Road Bangalore | Review | Brochure  | New Launch",
+      "Assetz Naru and Nami | Whitefield-Hoskote Road Bangalore | Review | Brochure  | New Launch",
     description:
-      "Assetz Naru & Nami a new launch premium apartment project in Whitefield-Hoskote Road (SH-35), Bangalore East. Covers 15 acres of land, it offers 2 BHK, 3 BHK and 4 BHK apartments over 6 high-rise towers.",
+      "Assetz Naru and Nami a new launch premium apartment project in Whitefield-Hoskote Road, Bangalore East. Covers 15 acres of land, it offers 2 BHK, 3 BHK and 4 BHK apartments over 6 high-rise towers.",
     images: [
       "https://www.assetznarunami.co/images/banners/assetznarunami.webp",
     ],
@@ -106,8 +107,8 @@ export const metadata = {
     },
   ],
 
-  creator: "Assetz Naru & Nami",
-  publisher: "Assetz Naru & Nami",
+  creator: "Assetz Naru and Nami",
+  publisher: "Assetz Naru and Nami",
 
   category: "Real Estate",
 

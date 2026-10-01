@@ -1,40 +1,48 @@
 import BlogSection from "@/components/BlogsSection";
 import PricePage from "./PricePage";
 
+const TITLE = "Assetz Naru and Nami Price List | 2, 3 and 4 BHK from ₹1.38 Cr";
+const DESCRIPTION =
+  "Assetz Naru and Nami price list: 2 BHK ~₹1.38 Cr, 3 BHK ~₹1.90 Cr and 4 BHK ~₹2.65 Cr at ₹11,500/sq. ft. on Whitefield-Hoskote Road (SH-35).";
+const URL = "https://www.assetznarunami.co/price";
+const IMAGE = "https://www.assetznarunami.co/images/assetznarunami-price.webp";
+
 export const metadata = {
   title: {
-    absolute: "Assetz Naru & Nami Price | 2, 3 & 4 BHK Price List",
+    absolute: TITLE,
   },
 
-  description:
-    "Assetz Naru & Nami price starts at ₹1.38 Cr* (2 BHK), ₹1.90 Cr* (3 BHK) and ₹2.65 Cr* (4 BHK) on Whitefield-Hoskote Road, Bangalore East.",
+  description: DESCRIPTION,
 
   keywords: [
-    "Assetz Naru & Nami price",
-    "Assetz Naru & Nami price list",
-    "Assetz Naru & Nami cost sheet",
-    "Assetz Naru & Nami 2 BHK price",
-    "Assetz Naru & Nami 3 BHK price",
-    "Assetz Naru & Nami 4 BHK price",
-    "Assetz Naru & Nami price per sq ft",
+    "Assetz Naru and Nami price",
+    "Assetz Naru and Nami price list",
+    "Assetz Naru and Nami 2 BHK price",
+    "Assetz Naru and Nami 3 BHK price",
+    "Assetz Naru and Nami 4 BHK price",
+    "Assetz Naru and Nami price per sq ft",
+    "Assetz Naru and Nami cost sheet",
+    "Assetz Naru and Nami price comparison",
+    "Assetz Naru and Nami apartment cost",
     "apartment price Whitefield-Hoskote Road",
-    "new launch apartment price Bangalore East"
+    "new launch apartment price East Bangalore",
   ],
 
   alternates: {
-    canonical: "https://www.assetznarunami.co/price",
+    canonical: URL,
   },
 
   openGraph: {
-    title: "Assetz Naru & Nami Price List | 2, 3 & 4 BHK Apartments",
-    description:
-      "Assetz Naru & Nami price starts at ₹1.38 Cr* (2 BHK), ₹1.90 Cr* (3 BHK) and ₹2.65 Cr* (4 BHK) on Whitefield-Hoskote Road, Bangalore East.",
-    url: "https://www.assetznarunami.co/price",
-    siteName: "Assetz Naru & Nami",
+    title: TITLE,
+    description: DESCRIPTION,
+    url: URL,
+    siteName: "Assetz Naru and Nami",
     images: [
       {
-        url: "https://www.assetznarunami.co/images/costing-details.webp",
-        alt: "Assetz Naru & Nami Price List",
+        url: IMAGE,
+        width: 1400,
+        height: 850,
+        alt: "Assetz Naru and Nami price list for 2, 3 and 4 BHK apartments",
       },
     ],
     locale: "en_IN",
@@ -43,10 +51,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Assetz Naru & Nami Price List | 2, 3 & 4 BHK Apartments",
-    description:
-      "Assetz Naru & Nami price starts at ₹1.38 Cr* (2 BHK), ₹1.90 Cr* (3 BHK) and ₹2.65 Cr* (4 BHK) on Whitefield-Hoskote Road, Bangalore East.",
-    images: ["https://www.assetznarunami.co/images/costing-details.webp"],
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [IMAGE],
   },
 
   category: "Real Estate",
@@ -58,73 +65,85 @@ export default function Page() {
     "@graph": [
       {
         "@type": "BreadcrumbList",
-        "itemListElement": [
+        itemListElement: [
           {
             "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.assetznarunami.co/"
+            position: 1,
+            name: "Home",
+            item: "https://www.assetznarunami.co/",
           },
           {
             "@type": "ListItem",
-            "position": 2,
-            "name": "Price",
-            "item": "https://www.assetznarunami.co/price"
-          }
-        ]
+            position: 2,
+            name: "Price",
+            item: URL,
+          },
+        ],
       },
       {
         "@type": "ApartmentComplex",
-        "name": "Assetz Naru & Nami",
-        "description": "Assetz Naru & Nami offers 2, 3 and 4 BHK apartments on Whitefield-Hoskote Road (SH-35), Bangalore East, with indicative prices from ₹1.38 Cr* onwards.",
-        "address": {
+        name: "Assetz Naru & Nami",
+        description:
+          "Assetz Naru & Nami by Assetz Property offers 2, 3 and 4 BHK apartments across six towers on about 15 acres on Whitefield-Hoskote Road (SH-35), East Bangalore, with indicative prices from ₹1.38 Cr.",
+        url: URL,
+        image: IMAGE,
+        numberOfAccommodationUnits: "725",
+        address: {
           "@type": "PostalAddress",
-          "streetAddress": "Whitefield-Hoskote Road (SH-35), Bangalore East",
-          "addressLocality": "Bangalore",
-          "addressRegion": "Karnataka",
-          "postalCode": "560115",
-          "addressCountry": "IN"
+          streetAddress: "Whitefield-Hoskote Road (SH-35), Bangalore East",
+          addressLocality: "Bangalore",
+          addressRegion: "Karnataka",
+          postalCode: "560115",
+          addressCountry: "IN",
         },
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "INR",
-          "price": "13800000",
-          "availability": "https://schema.org/PreOrder",
-          "url": "https://www.assetznarunami.co/price"
+        offers: {
+          "@type": "AggregateOffer",
+          priceCurrency: "INR",
+          lowPrice: "13800000",
+          highPrice: "26500000",
+          offerCount: "3",
+          availability: "https://schema.org/PreOrder",
+          url: URL,
         },
-        "url": "https://www.assetznarunami.co/price",
-        "image": "https://www.assetznarunami.co/images/costing-details.webp"
       },
       {
         "@type": "FAQPage",
-        "mainEntity": [
+        mainEntity: [
           {
             "@type": "Question",
-            "name": "What is the starting price of Assetz Naru & Nami?",
-            "acceptedAnswer": {
+            name: "What is the starting price of Assetz Naru & Nami?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Indicative prices start from about ₹1.38 Cr* for a 2 BHK (around 1,200 sq. ft.), ₹1.90 Cr* for a 3 BHK (around 1,650 sq. ft.) and ₹2.65 Cr* for a 4 BHK (around 2,300 sq. ft.). The developer has not yet released an official cost sheet."
-            }
+              text: "Indicative apartment prices at Assetz Naru & Nami start at approximately ₹1.38 Cr for a 2 BHK of about 1,200 sq. ft. super built-up area.",
+            },
           },
           {
             "@type": "Question",
-            "name": "What is the price per sq. ft. at Assetz Naru & Nami?",
-            "acceptedAnswer": {
+            name: "What is the price of 2, 3 and 4 BHK apartments at Assetz Naru & Nami?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Based on comparable projects on Whitefield-Hoskote Road, the indicative rate band is ₹10,800 to ₹12,600 per sq. ft., with about ₹11,500 per sq. ft. used as a working reference."
-            }
+              text: "The indicative prices are about ₹1.38 Cr for a 2 BHK (1,200 sq. ft.), ₹1.90 Cr for a 3 BHK (1,650 sq. ft.) and ₹2.65 Cr for a 4 BHK (2,300 sq. ft.).",
+            },
           },
           {
             "@type": "Question",
-            "name": "Where is Assetz Naru & Nami located?",
-            "acceptedAnswer": {
+            name: "What is the price per sq. ft. at Assetz Naru & Nami?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Assetz Naru & Nami is located on Whitefield-Hoskote Road (SH-35), Bangalore East, between Whitefield and Hoskote."
-            }
-          }
-        ]
-      }
-    ]
+              text: "The estimates use a derived rate of ₹11,500 per sq. ft. on the indicative super built-up area. These are not confirmed developer quotations or an official price list.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What charges are added to the Assetz Naru & Nami apartment price?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The indicative prices are not the complete purchase cost. Buyers should request a detailed cost sheet covering GST, registration and stamp duty, parking charges, maintenance deposits and other development-related charges.",
+            },
+          },
+        ],
+      },
+    ],
   };
 
   return (

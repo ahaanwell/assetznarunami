@@ -1,38 +1,47 @@
 import BlogSection from "@/components/BlogsSection";
 import MasterPlanPage from "./MasterPlanPage";
 
+const TITLE = "Assetz Naru and Nami Master Plan | 15 Acres, 6 Towers";
+const DESCRIPTION =
+  "Assetz Naru and Nami master plan: 725 apartments in 6 towers (2B+G+30) on about 15 acres with 75% open space on Whitefield-Hoskote Road (SH-35).";
+const URL = "https://www.assetznarunami.co/master-plan";
+const IMAGE = "https://www.assetznarunami.co/images/master-plan.webp";
+
 export const metadata = {
   title: {
-    absolute: "Assetz Naru & Nami Master Plan | 15 Acres, 6 Towers",
+    absolute: TITLE,
   },
 
-  description:
-    "Assetz Naru & Nami master plan: 725 apartments in 6 towers (2B+G+30) on about 15 acres with 75% open space, on Whitefield-Hoskote Road (SH-35), Bangalore East.",
+  description: DESCRIPTION,
 
   keywords: [
-    "Assetz Naru & Nami master plan",
-    "Assetz Naru & Nami site plan",
-    "Assetz Naru & Nami layout",
-    "Assetz Naru & Nami towers",
-    "Assetz Naru & Nami open space",
-    "Assetz Naru & Nami land area",
-    "master plan Whitefield-Hoskote Road apartments"
+    "Assetz Naru and Nami master plan",
+    "Assetz Naru and Nami site plan",
+    "Assetz Naru and Nami site layout",
+    "Assetz Naru and Nami tower layout",
+    "Assetz Naru and Nami land area",
+    "Assetz Naru and Nami open space",
+    "Assetz Naru and Nami 6 towers",
+    "Assetz Naru and Nami 725 apartments",
+    "master plan Whitefield-Hoskote Road apartments",
+    "residential master plan East Bangalore",
   ],
 
   alternates: {
-    canonical: "https://www.assetznarunami.co/master-plan",
+    canonical: URL,
   },
 
   openGraph: {
-    title: "Assetz Naru & Nami Master Plan & Site Layout",
-    description:
-      "Assetz Naru & Nami master plan: 725 apartments in 6 towers (2B+G+30) on about 15 acres with 75% open space, on Whitefield-Hoskote Road (SH-35), Bangalore East.",
-    url: "https://www.assetznarunami.co/master-plan",
-    siteName: "Assetz Naru & Nami",
+    title: TITLE,
+    description: DESCRIPTION,
+    url: URL,
+    siteName: "Assetz Naru and Nami",
     images: [
       {
-        url: "https://www.assetznarunami.co/images/master-plan.webp",
-        alt: "Assetz Naru & Nami Master Plan",
+        url: IMAGE,
+        width: 1248,
+        height: 768,
+        alt: "Assetz Naru and Nami master plan showing six towers and open spaces",
       },
     ],
     locale: "en_IN",
@@ -41,10 +50,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Assetz Naru & Nami Master Plan & Site Layout",
-    description:
-      "Assetz Naru & Nami master plan: 725 apartments in 6 towers (2B+G+30) on about 15 acres with 75% open space, on Whitefield-Hoskote Road (SH-35), Bangalore East.",
-    images: ["https://www.assetznarunami.co/images/master-plan.webp"],
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [IMAGE],
   },
 
   category: "Real Estate",
@@ -56,89 +64,76 @@ export default function page() {
     "@graph": [
       {
         "@type": "BreadcrumbList",
-        "itemListElement": [
+        itemListElement: [
           {
             "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.assetznarunami.co/"
+            position: 1,
+            name: "Home",
+            item: "https://www.assetznarunami.co/",
           },
           {
             "@type": "ListItem",
-            "position": 2,
-            "name": "Master Plan",
-            "item": "https://www.assetznarunami.co/master-plan"
-          }
-        ]
+            position: 2,
+            name: "Master Plan",
+            item: URL,
+          },
+        ],
       },
       {
         "@type": "ApartmentComplex",
-        "name": "Assetz Naru & Nami",
-        "description": "Assetz Naru & Nami is planned as 6 residential towers (2B+G+30) with 725 apartments on about 15 acres, with 75% open space, on Whitefield-Hoskote Road (SH-35), Bangalore East.",
-        "address": {
+        name: "Assetz Naru & Nami",
+        description:
+          "Assetz Naru & Nami by Assetz Property is planned as six residential towers (2B+G+30) with 725 apartments on about 15 acres, with 75% open space, on Whitefield-Hoskote Road (SH-35), East Bangalore.",
+        url: URL,
+        image: IMAGE,
+        numberOfAccommodationUnits: "725",
+        address: {
           "@type": "PostalAddress",
-          "streetAddress": "Whitefield-Hoskote Road (SH-35), Bangalore East",
-          "addressLocality": "Bangalore",
-          "addressRegion": "Karnataka",
-          "postalCode": "560115",
-          "addressCountry": "IN"
+          streetAddress: "Whitefield-Hoskote Road (SH-35), Bangalore East",
+          addressLocality: "Bangalore",
+          addressRegion: "Karnataka",
+          postalCode: "560115",
+          addressCountry: "IN",
         },
-        "numberOfAccommodationUnits": "725",
-        "amenityFeature": [
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Clubhouse",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Swimming Pool",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Landscaped Gardens",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Children Play Area",
-            "value": true
-          }
-        ],
-        "url": "https://www.assetznarunami.co/master-plan",
-        "image": "https://www.assetznarunami.co/images/master-plan.webp"
       },
       {
         "@type": "FAQPage",
-        "mainEntity": [
+        mainEntity: [
           {
             "@type": "Question",
-            "name": "How many towers are in Assetz Naru & Nami?",
-            "acceptedAnswer": {
+            name: "What is the land area of Assetz Naru & Nami?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "The project has 6 residential towers, each planned with two basements, a ground floor and 30 upper floors (2B+G+30)."
-            }
+              text: "Assetz Naru & Nami is spread across approximately 15 acres on Whitefield-Hoskote Road (SH-35), East Bangalore.",
+            },
           },
           {
             "@type": "Question",
-            "name": "How much open space does Assetz Naru & Nami have?",
-            "acceptedAnswer": {
+            name: "How many towers and apartments are in the Assetz Naru & Nami master plan?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "About 75% of the approximately 15-acre site is planned as open space."
-            }
+              text: "The master plan includes six residential towers with a combined inventory of 725 apartments. Each tower has two basements, a ground floor and 30 upper floors.",
+            },
           },
           {
             "@type": "Question",
-            "name": "Where is Assetz Naru & Nami located?",
-            "acceptedAnswer": {
+            name: "How much open space does Assetz Naru & Nami have?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Assetz Naru & Nami is located on Whitefield-Hoskote Road (SH-35), Bangalore East, between Whitefield and Hoskote."
-            }
-          }
-        ]
-      }
-    ]
+              text: "Assetz Naru & Nami has a stated open space allocation of 75%. The exact distribution of open areas should be verified against the official master plan.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What should buyers check in the Assetz Naru & Nami master plan?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Buyers should check the site boundaries, tower positioning, open space allocation, building configuration, residential distribution and internal circulation shown in the approved drawing.",
+            },
+          },
+        ],
+      },
+    ],
   };
 
   return (

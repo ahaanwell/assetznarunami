@@ -120,11 +120,11 @@ export default function ProjectHighlights() {
   </h2>
 
   <p>
-    <strong>Assetz Naru &amp; Nami</strong> is a new residential property by <ExtLink href="https://www.assetzproperty.com/"><strong>Assetz Property</strong></ExtLink>. It is a new innovative property situated on <strong>Whitefield Hoskote Road SH 35 in the Eastern part of Bangalore</strong>. This project will be over <strong>15 acres</strong> and will have a vibrant neighborhood with <strong>725 homes</strong>.
+    <strong>Assetz Naru and Nami</strong> is a new residential property by <ExtLink href="https://www.assetzproperty.com/"><strong>Assetz Property</strong></ExtLink>. It is a new innovative property situated on <strong>Whitefield Hoskote Road SH 35 in the Eastern part of Bangalore</strong>. This project will be over <strong>15 acres</strong> and will have a vibrant neighborhood with <strong>725 homes</strong>.
   </p>
 
   <p>
-    The project will include a mix of <strong>2, 3 and 4 BHK apartments</strong> across <strong>six towers</strong>. The towers will have two basements, a ground floor, and thirty floors. The towers are designed in a <strong>2B+G+30 floor layout</strong>, with about <strong>75% of the area dedicated to open space</strong>. This careful planning ensures the builtup areas, beautifully landscaped areas and shared community spaces work well together. People can move in starting in <strong>2032</strong>. This project is part of the <ExtLink href="https://en.wikipedia.org/wiki/Whitefield,_Bengaluru">Whitefield</ExtLink>-<ExtLink href="https://en.wikipedia.org/wiki/Hoskote">Hoskote</ExtLink> corridor's longer growth path.
+    The project will include a mix of <strong>2, 3 and 4 BHK apartments</strong> across <strong>6 towers</strong>. The towers will have two basements, a ground floor, and thirty floors. The towers are designed in a <strong>2B+G+30 floor layout</strong>, with about <strong>75% of the area dedicated to open space</strong>. This careful planning ensures the builtup areas, beautifully landscaped areas and shared community spaces work well together. People can move in starting in <strong>2032</strong>. This project is part of the <ExtLink href="https://en.wikipedia.org/wiki/Whitefield,_Bengaluru">Whitefield</ExtLink>-<ExtLink href="https://en.wikipedia.org/wiki/Hoskote">Hoskote</ExtLink> corridor's longer growth path.
   </p>
 
   <p>
@@ -165,7 +165,7 @@ export default function ProjectHighlights() {
   </h2>
 
   <h2 className="text-2xl font-bold">
-    Assetz Naru &amp; Nami Project Overview
+    Assetz Naru and Nami Project Overview
   </h2>
 
   <div className="overflow-x-auto">
@@ -183,7 +183,7 @@ export default function ProjectHighlights() {
       <tbody>
         <tr>
           <td className="border border-gray-300 px-4 py-3">Project Name</td>
-          <td className="border border-gray-300 px-4 py-3"><strong>Assetz Naru &amp; Nami</strong></td>
+          <td className="border border-gray-300 px-4 py-3"><strong>Assetz Naru and Nami</strong></td>
         </tr>
         <tr>
           <td className="border border-gray-300 px-4 py-3">Developer</td>
@@ -253,7 +253,7 @@ export default function ProjectHighlights() {
   </p>
 
   <h2 className="text-2xl font-bold">
-    Assetz Naru &amp; Nami is located in this transitional zone
+    Assetz Naru and Nami is located in this transitional zone
   </h2>
 
   <p>
@@ -327,7 +327,7 @@ export default function ProjectHighlights() {
   </h2>
 
   <p>
-    <strong>Assetz Naru &amp; Nami</strong> boasts an impressive <strong>75% open space</strong> across its approximately <strong>15-acre site</strong>, which is a remarkable feature.
+    <strong>Assetz Naru and Nami</strong> boasts an impressive <strong>75% open space</strong> across its approximately <strong>15-acre site</strong>, which is a remarkable feature.
   </p>
 
   <p>
@@ -351,7 +351,7 @@ export default function ProjectHighlights() {
   </h2>
 
   <p>
-    One of the major highlights associated with Assetz Naru &amp; Nami is the approximately 75% open space. This large open-space element can help create a more balanced relationship between built and open space on a high-rise residential site.
+    One of the major highlights associated with Assetz Naru and Nami is the approximately 75% open space. This large open-space element can help create a more balanced relationship between built and open space on a high-rise residential site.
   </p>
 
   <p>

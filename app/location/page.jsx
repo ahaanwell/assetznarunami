@@ -1,40 +1,47 @@
 import BlogSection from "@/components/BlogsSection";
 import LocationPage from "./LocationPage";
 
+const TITLE = "Assetz Naru and Nami Location | Whitefield-Hoskote Road";
+const DESCRIPTION =
+  "Assetz Naru and Nami location: Whitefield-Hoskote Road (SH-35), East Bangalore. 725 apartments in 6 towers on 15 acres, between Whitefield and Hoskote.";
+const URL = "https://www.assetznarunami.co/location";
+const IMAGE = "https://www.assetznarunami.co/images/location-map-view.webp";
+
 export const metadata = {
   title: {
-    absolute: "Assetz Naru & Nami Location | Whitefield-Hoskote Road",
+    absolute: TITLE,
   },
 
-  description:
-    "Assetz Naru & Nami is on Whitefield-Hoskote Road (SH-35), about 8–10 km from Whitefield, 9–11 km from ITPL and 7–9 km from Kadugodi Metro.",
+  description: DESCRIPTION,
 
   keywords: [
-    "Assetz Naru & Nami location",
-    "Assetz Naru & Nami address",
-    "Assetz Naru & Nami Whitefield-Hoskote Road",
-    "Assetz Naru & Nami SH-35",
-    "Assetz Naru & Nami connectivity",
-    "apartments near Whitefield",
-    "apartments near Hoskote",
-    "apartments near Kadugodi Metro",
-    "new launch apartments Bangalore East"
+    "Assetz Naru and Nami location",
+    "Assetz Naru and Nami address",
+    "Assetz Naru and Nami location map",
+    "Assetz Naru and Nami Whitefield-Hoskote Road",
+    "Assetz Naru and Nami SH-35",
+    "Assetz Naru and Nami connectivity",
+    "Assetz Naru and Nami East Bangalore",
+    "apartments on Whitefield-Hoskote Road",
+    "new launch apartments East Bangalore",
+    "apartments between Whitefield and Hoskote",
   ],
 
   alternates: {
-    canonical: "https://www.assetznarunami.co/location",
+    canonical: URL,
   },
 
   openGraph: {
-    title: "Assetz Naru & Nami Location & Connectivity | Bangalore East",
-    description:
-      "Assetz Naru & Nami is on Whitefield-Hoskote Road (SH-35), about 8–10 km from Whitefield, 9–11 km from ITPL and 7–9 km from Kadugodi Metro.",
-    url: "https://www.assetznarunami.co/location",
-    siteName: "Assetz Naru & Nami",
+    title: TITLE,
+    description: DESCRIPTION,
+    url: URL,
+    siteName: "Assetz Naru and Nami",
     images: [
       {
-        url: "https://www.assetznarunami.co/images/banners/assetznarunami.webp",
-        alt: "Assetz Naru & Nami Location on Whitefield-Hoskote Road",
+        url: IMAGE,
+        width: 1676,
+        height: 875,
+        alt: "Assetz Naru and Nami location map on Whitefield-Hoskote Road (SH-35), East Bangalore",
       },
     ],
     locale: "en_IN",
@@ -43,10 +50,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Assetz Naru & Nami Location & Connectivity | Bangalore East",
-    description:
-      "Assetz Naru & Nami is on Whitefield-Hoskote Road (SH-35), about 8–10 km from Whitefield, 9–11 km from ITPL and 7–9 km from Kadugodi Metro.",
-    images: ["https://www.assetznarunami.co/images/banners/assetznarunami.webp"],
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [IMAGE],
   },
 
   category: "Real Estate",
@@ -58,66 +64,92 @@ export default function page() {
     "@graph": [
       {
         "@type": "BreadcrumbList",
-        "itemListElement": [
+        itemListElement: [
           {
             "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.assetznarunami.co/"
+            position: 1,
+            name: "Home",
+            item: "https://www.assetznarunami.co/",
           },
           {
             "@type": "ListItem",
-            "position": 2,
-            "name": "Location",
-            "item": "https://www.assetznarunami.co/location"
-          }
-        ]
+            position: 2,
+            name: "Location",
+            item: URL,
+          },
+        ],
       },
       {
         "@type": "ApartmentComplex",
-        "name": "Assetz Naru & Nami",
-        "description": "Assetz Naru & Nami is located on Whitefield-Hoskote Road (SH-35), Bangalore East, with road access to Whitefield, ITPL, Kadugodi Metro, KR Puram, Hoskote and Kempegowda International Airport.",
-        "address": {
+        name: "Assetz Naru & Nami",
+        description:
+          "Assetz Naru & Nami by Assetz Property is located on Whitefield-Hoskote Road (SH-35), East Bangalore, with 725 apartments in six towers on about 15 acres.",
+        url: URL,
+        image: IMAGE,
+        numberOfAccommodationUnits: "725",
+        address: {
           "@type": "PostalAddress",
-          "streetAddress": "Whitefield-Hoskote Road (SH-35), Bangalore East",
-          "addressLocality": "Bangalore",
-          "addressRegion": "Karnataka",
-          "postalCode": "560115",
-          "addressCountry": "IN"
+          streetAddress: "Whitefield-Hoskote Road (SH-35), Bangalore East",
+          addressLocality: "Bangalore",
+          addressRegion: "Karnataka",
+          postalCode: "560115",
+          addressCountry: "IN",
         },
-        "url": "https://www.assetznarunami.co/location",
-        "image": "https://www.assetznarunami.co/images/banners/assetznarunami.webp"
       },
       {
         "@type": "FAQPage",
-        "mainEntity": [
+        mainEntity: [
           {
             "@type": "Question",
-            "name": "Where is Assetz Naru & Nami located?",
-            "acceptedAnswer": {
+            name: "Where is Assetz Naru & Nami located?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Assetz Naru & Nami is located on Whitefield-Hoskote Road (SH-35), Bangalore East, between Whitefield and Hoskote."
-            }
+              text: "Assetz Naru & Nami is located on Whitefield–Hoskote Road (SH-35), East Bangalore.",
+            },
           },
           {
             "@type": "Question",
-            "name": "How far is Whitefield from Assetz Naru & Nami?",
-            "acceptedAnswer": {
+            name: "Which developer is developing Assetz Naru & Nami?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Whitefield is about 8–10 km and ITPL about 9–11 km from the project, depending on the final access point and traffic."
-            }
+              text: "The project is developed by Assetz Property.",
+            },
           },
           {
             "@type": "Question",
-            "name": "How far is Kempegowda International Airport from Assetz Naru & Nami?",
-            "acceptedAnswer": {
+            name: "What type of residential development is planned?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Kempegowda International Airport is about 35–45 km away, a drive of roughly 45–70 minutes depending on traffic."
-            }
-          }
-        ]
-      }
-    ]
+              text: "Assetz Naru & Nami is a residential apartment project offering 2, 3, and 4 BHK configurations.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How large is the project?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The development covers approximately 15 acres and comprises six towers with a total of 725 apartments.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What is the possession timeline?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Possession is scheduled from 2032 onwards, according to the provided project details.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How should buyers evaluate the location?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Buyers should examine the project's approach roads, daily commuting routes, nearby essential services, public transport availability, and actual travel times.",
+            },
+          },
+        ],
+      },
+    ],
   };
 
   return (
